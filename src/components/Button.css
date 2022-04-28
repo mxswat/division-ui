@@ -1,0 +1,43 @@
+.td-button {
+    font-family: 'bordaregular';
+    font-size: 2em;
+    color: white;
+    /* 
+    backdrop-filter: blur(8px); 
+    This piece of shit single handendly fucked over 2 hours of my life life
+    it breaks the 3d transform **entirelly**
+    */
+    padding: 8px;
+    transform: none;
+    transition-delay: 100ms;
+    transition: background-color 0.20s, transform 0.20s;
+    --background-color: rgba(255, 255, 255, 0.0);
+    --text-shadow-display: block;
+}
+
+.td-button:hover, .td-button:active, .td-button:focus {
+    --background-color: rgba(255, 255, 255, 0.2);
+    transform: translateZ(8px);
+}
+
+.td-button:active, .td-button:focus {
+    --background-color: var(--td-orange);
+    color: black;
+    --text-shadow-display: none;
+}
+
+.td-button--text::after {
+    content: attr(data-tdtext);
+    display: var(--text-shadow-display);
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%) translateZ(-2px);
+    opacity: 1;
+    color: black;
+    z-index: -1;
+}
+
+.td-button:focus {
+    outline: none;
+}

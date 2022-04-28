@@ -1,0 +1,16 @@
+.td-MainMenu {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  padding: 5em;
+}
+
+.left-side, .right-side {
+  flex: 0 1 633px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side {
+  transform: rotateY(5deg) translateZ(0px);
+}
