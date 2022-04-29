@@ -7,13 +7,15 @@
 }
 
 .left-side, .right-side {
-  flex: 0 1 500px;
   display: flex;
   flex-direction: column;
 }
 
 .left-side {
-  transform: rotateY(5deg) translateZ(0px);
+  flex: 0 1 450px;
+  padding-top: 2em;
+  padding-left: 2em;
+  transform: rotateY(9.9deg) translateZ(0px);
 }
 
 .right-side {
@@ -21,4 +23,8 @@
   transform: rotateY(-9deg) translateZ(0px);
   padding-top: 6em;
   margin-right: 9em;
+}
+
+.nexus-logos {
+  display: flex;
 }

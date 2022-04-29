@@ -17,6 +17,10 @@ const MainMenu = () => {
       </div>
       <div className="right-side preserve-3d">
         <Separator />
+        <div className='nexus-logos'>
+          <img height={160} src="https://www.nexusmods.com/bootstrap/images/vortex/nmm-logomark.svg" alt="Nexus Mods Logo" />
+          <img height={160} src="https://www.nexusmods.com/bootstrap/images/vortex/vortex-logomark.svg" alt="Nexus Mods Logo" />
+        </div>
       </div>
     </div>
   );
