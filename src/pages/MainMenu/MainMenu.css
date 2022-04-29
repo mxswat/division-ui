@@ -1,16 +1,24 @@
 .td-MainMenu {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex: 1 1 auto;
-  padding: 5em;
+  padding: 4em;
 }
 
 .left-side, .right-side {
-  flex: 0 1 633px;
+  flex: 0 1 500px;
   display: flex;
   flex-direction: column;
 }
 
 .left-side {
   transform: rotateY(5deg) translateZ(0px);
+}
+
+.right-side {
+  flex: 0 1 300px;
+  transform: rotateY(-9deg) translateZ(0px);
+  padding-top: 6em;
+  margin-right: 9em;
 }

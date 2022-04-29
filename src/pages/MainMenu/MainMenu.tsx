@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../../components/Button';
+import { Button } from '../../components/Button';
+import { Separator } from '../../components/Separator';
 import './MainMenu.css';
 
 const MainMenu = () => {
@@ -15,7 +16,7 @@ const MainMenu = () => {
         <Button text='Hello'></Button>
       </div>
       <div className="right-side preserve-3d">
-
+        <Separator />
       </div>
     </div>
   );
