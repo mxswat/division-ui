@@ -9,7 +9,7 @@ export const Button = (props: {
   const { children, className } = props;
 
   return (
-    <button className={`preserve-3d td-button td-border ${className || ''}`}>
+    <button className={`td-button td-border ${className || ''}`}>
       {children}
     </button>
   );

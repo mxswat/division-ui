@@ -6,7 +6,7 @@ export const Text = ({
   hasShadow = true,
   className = '',
 }) => {
-  const _className = `preserve-3d td-text ${hasShadow ? 'td-text--shadow' : ''} ${className}`.trim();
+  const _className = `td-text ${hasShadow ? 'td-text--shadow' : ''} ${className}`.trim();
 
   return (
     <span className={_className} data-tdtext={children}>

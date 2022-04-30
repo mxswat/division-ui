@@ -28,3 +28,13 @@
 .nexus-logos {
   display: flex;
 }
+
+.nexus-logos img {
+  height: 126px;
+  margin: 16px auto;
+  filter: grayscale(1) brightness(1.2);
+}
+
+.player-info {
+  padding: 8px 16px;
+}

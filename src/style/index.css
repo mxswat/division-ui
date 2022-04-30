@@ -61,7 +61,8 @@ code {
     monospace;
 }
 
-.preserve-3d {
+* {
+	/* Check fi this will break performance */
 	transform-style: preserve-3d;
 }
 

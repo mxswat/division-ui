@@ -93,3 +93,19 @@ body {
 .giga-font {
     font-size: 6em !important;
 }
+
+.font-1 {
+    font-size: 1em !important;
+}
+
+.font-1-2 {
+    font-size: 1.2em !important;
+}
+
+.gray {
+    color: #bbbbbb !important;
+}
+
+.demibold {
+    font-family: 'bordaregular_3';
+}
