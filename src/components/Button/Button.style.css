@@ -12,7 +12,6 @@
     transition-delay: 100ms;
     transition: background-color 0.20s, transform 0.20s;
     --background-color: rgba(255, 255, 255, 0.1);
-    --text-shadow-display: block;
 }
 
 .td-button:hover, .td-button:active, .td-button:focus {
@@ -23,19 +22,10 @@
 .td-button:active, .td-button:focus {
     --background-color: var(--td-orange);
     color: black;
-    --text-shadow-display: none;
 }
 
-.td-button--text::after {
-    content: attr(data-tdtext);
-    display: var(--text-shadow-display);
-    position: absolute;
-    top: 50%;  
-    left: 50%; 
-    transform: translate(-50%, -50%) translateZ(-3px);
-    opacity: 1;
-    color: black;
-    z-index: -1;
+.td-button:active .td-text.td-text--shadow::after {
+    --text-shadow-display: none;
 }
 
 .td-button:focus {

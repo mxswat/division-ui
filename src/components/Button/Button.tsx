@@ -1,17 +1,16 @@
 import React from 'react';
+import { Text } from '../Text';
 import './Button.style.css';
 
 export const Button = (props: {
-  text: string,
+  children: any,
   className?: string
 }) => {
-  const { text, className } = props;
+  const { children, className } = props;
 
   return (
     <button className={`preserve-3d td-button td-border ${className || ''}`}>
-      <div  className="preserve-3d td-button--text" data-tdtext={text}>
-        {text}
-      </div>
+      {children}
     </button>
   );
 }

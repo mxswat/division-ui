@@ -1,0 +1,21 @@
+.td-text {
+    font-size: 2em;
+    display: block;
+    --translateZ: -0.03em;
+}
+
+.td-text--shadow::after {
+    content: attr(data-tdtext);
+    display: var(--text-shadow-display);
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%) translateZ(var(--translateZ));
+    opacity: 1;
+    color: black;
+    z-index: -1;
+}
+
+.td-text.td-text--shadow::after {
+    --text-shadow-display: block;
+}
