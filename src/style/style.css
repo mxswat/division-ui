@@ -102,6 +102,11 @@ body {
     font-size: 1.2em !important;
 }
 
+.font-3 {
+    font-size: 3em !important;
+}
+
+
 .gray {
     color: #bbbbbb !important;
 }

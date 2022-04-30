@@ -14,7 +14,7 @@
     --ob: 2px;
     /* offset of inner border from inside */
 
-    margin-top: 6px;
+    margin-top: calc(6px + var(--square-size));
     border: var(--ot) solid transparent;
     background:
         /* squares */

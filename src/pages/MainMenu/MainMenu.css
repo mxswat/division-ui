@@ -31,10 +31,25 @@
 
 .nexus-logos img {
   height: 126px;
-  margin: 16px auto;
+  margin: 13px auto;
   filter: grayscale(1) brightness(1.2);
 }
 
 .player-info {
   padding: 8px 16px;
+}
+
+.years-box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 21px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.45);
+  --outer-border-color: rgba(255, 255, 255, 0.5);
+  --inner-border-color: rgb(255, 255, 255, 0.6);
+}
+
+.yoe {
+  margin-left: 16px;
 }
