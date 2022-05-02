@@ -16,6 +16,7 @@ body {
 #root {
     background-image: url('../images/noUIbg.png');
     background-image: url('../../Resources/Screenshots/Menu-Main.jpg');
+    /* background-image: url('../../Resources/Screenshots/Menu-Settings-BenchMark.jpg'); */
     background-size: cover;
     perspective: 1000px;
     overflow: auto;
@@ -27,7 +28,7 @@ body {
 
 /* Based on https://stackoverflow.com/a/61695887/10300983 */
 .td-border {
-    --background-color: transparent;
+    --td-border-background: transparent;
     --outer-border-width: 1px;
     --outer-border-color: rgba(255, 255, 255, 0.2);
     --inner-border-color: rgba(255, 255, 255, 0.5);
@@ -54,7 +55,7 @@ body {
         linear-gradient(var(--inner-border-color), var(--inner-border-color)) right /2px var(--w);
         /* Actual Background color using central gradient and 100% minus offset stop */
         /* This could have been so cool. but backgrond w/ vars cannot be animated */
-        /* linear-gradient(var(--background-color), var(--background-color)) center /calc(100% - var(--ob)) calc(100% - var(--ob)); */
+        /* linear-gradient(var(--td-border-background), var(--td-border-background)) center /calc(100% - var(--ob)) calc(100% - var(--ob)); */
         
     background-repeat: no-repeat;
     position: relative;
@@ -86,12 +87,13 @@ body {
     left: calc(var(--square-size) - var(--ot) - var(--ob));
     right: calc(var(--square-size) - var(--ot) - var(--ob));
     bottom: calc(var(--square-size) - var(--ot) - var(--ob));
-    background-color: var(--background-color);
+    background: var(--td-border-background);
     transition: background-color 0.25s;
 }
 
 :root {
     --td-orange: orange;
+    --td-orange-menu-gradient: linear-gradient(90deg, #fca72b 0%, #ffa326 100%);
 }
 
 .giga-font {

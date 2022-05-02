@@ -34,7 +34,7 @@
 }
 
 .nexus-logos img {
-  height: 126px;
+  height: 8.5em;
   margin: 13px auto;
   filter: grayscale(1) brightness(1.2);
   transition: filter 0.20s;

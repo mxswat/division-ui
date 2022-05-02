@@ -1,7 +1,7 @@
 /* Based on https://stackoverflow.com/a/61695887/10300983 */
 .td-separator {
     padding: 6px;
-    --background-color: transparent;
+    --td-border-background: transparent;
     --outer-border-width: 1px;
     --outer-border-color: rgba(255, 255, 255, 0.2);
     --inner-border-color: rgb(255, 255, 255);
