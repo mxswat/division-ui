@@ -53,3 +53,17 @@
 .yoe {
   margin-left: 16px;
 }
+
+.social {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+a.social--link {
+  font-size: 1.4em;
+  color: white;
+  padding: 16px;
+}

@@ -1,0 +1,11 @@
+.td-image-wrapper {
+    --outer-border-color: rgba(255, 255, 255, 1);
+    --inner-border-color: rgba(255, 255, 255, 1);
+    display: flex;
+    width: fit-content;
+}
+
+.td-image {
+    height: 50px;
+    width: 50px;
+}

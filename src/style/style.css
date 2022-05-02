@@ -36,7 +36,6 @@ body {
     --ob: 2px;
     /* offset of inner border from inside */
 
-    margin: 10px;
     border: var(--ot) solid transparent;
     background:
         /* squares */
@@ -56,6 +55,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
+    padding: var(--ob);
 }
 
 /* .td-border:hover {
