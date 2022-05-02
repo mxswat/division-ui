@@ -27,9 +27,6 @@ const MainMenu = () => {
         <Button>
           <Text className='giga-font'>Hello</Text>
         </Button>
-        <Button>
-          <Text>Hello</Text>
-        </Button>
       </div>
       <MainMenuRight />
     </div>

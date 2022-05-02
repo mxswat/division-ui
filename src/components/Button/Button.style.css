@@ -5,7 +5,8 @@
     /* 
     backdrop-filter: blur(8px); 
     This piece of shit single handendly fucked over 2 hours of my life life
-    it breaks the 3d transform **entirelly**
+    it breaks the 3d transform **entirelly**, breaks the perspective text shadow
+    And on top of this, does not even work in firefox
     */
     padding: 8px;
     transform: none;

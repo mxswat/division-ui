@@ -15,11 +15,15 @@ const MainMenuRight = () => {
                 <img src="https://www.nexusmods.com/bootstrap/images/vortex/vortex-logomark.svg" alt="Vortex Logo" />
             </div>
             <div className="player-info">
-                <Text className='font-1-2'>Current Location</Text>
+                <Text className='font-1-2'>Location</Text>
                 <Text className='font-1 gray'>United Kingdom</Text>
             </div>
             <div className="player-info">
-                <Text className='font-1-2'>Current Position</Text>
+                <Text className='font-1-2'>Company</Text>
+                <Text className='font-1 gray'>Nexus Mods</Text>
+            </div>
+            <div className="player-info">
+                <Text className='font-1-2'>Position</Text>
                 <Text className='font-1 gray'>Vortex Node & Front-End Developer</Text>
             </div>
             <Separator />

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex: 1 1 auto;
-  padding: 4em;
+  padding: 8vh;
 }
 
 .left-side, .right-side {
@@ -13,16 +13,20 @@
 
 .left-side {
   flex: 0 1 450px;
-  padding-top: 2em;
-  padding-left: 2em;
+  padding-top: 2vh;
+  padding-left: 3vw;
   transform: rotateY(9.9deg) translateZ(0px);
+}
+
+.left-side .td-button {
+  margin-bottom: 8px;
 }
 
 .right-side {
   flex: 0 1 300px;
   transform: rotateY(-9deg) translateZ(0px);
-  padding-top: 6em;
-  margin-right: 9em;
+  padding-top: 9vh;
+  padding-right: 6vw;;
 }
 
 .nexus-logos {
@@ -33,6 +37,7 @@
   height: 126px;
   margin: 13px auto;
   filter: grayscale(1) brightness(1.2);
+  transition: filter 0.20s;
 }
 
 .player-info {
