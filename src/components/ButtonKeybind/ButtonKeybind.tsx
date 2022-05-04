@@ -9,11 +9,11 @@ export const ButtonKeybind = (props: ComponentPropsWithoutRef<"button"> & {
   const className = `${props.className || ''} td-button-keybind`.trim();
   return (
     <button className={className}>
-      <span>
+      <span className='td-button-keybind--keybind'>
         {props.keybind}
       </span>
       <Separator vertical={true}/>
-      <span>
+      <span className='td-button-keybind--label'>
         {props.label}
       </span>
     </button>

@@ -1,0 +1,23 @@
+.td-pts-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 80.2vh;
+    font-size: 1.1em;
+    height: 6.6vh;
+    width: 25vw;
+    /* outline: 2px solid red; */
+}
+
+.td-pts-buttons .td-button-keybind {
+    height: 100%;
+    align-items: center;
+}
+
+.td-pts-buttons .td-button-keybind .td-separator {
+    
+}
+
+.td-pts-buttons .td-button-keybind .td-separator {
+    --square-size: 0.15em;
+}

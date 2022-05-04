@@ -5,13 +5,10 @@ import './PressToStart.style.css';
 
 export const PressToStart = () => {
   return (
-    <div className={`td-pts`}> 
-      <div>
+    <div className={`td-pts`}>
+      <div className='td-pts-buttons'>
         <ButtonKeybind keybind='space' label='Press To Start' />
-      </div>
-      <Separator />
-      <div>
-        <ButtonKeybind keybind='space' label='Press To Start' />
+        <ButtonKeybind keybind='Esc' label='Quit' />
       </div>
     </div>
   );

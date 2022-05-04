@@ -6,27 +6,27 @@
     --line-color: rgba(255, 255, 255, 0.2);
     --squares-color: rgba(255, 255, 255, 0.9);
     --square-size: 3px;
-    position: relative;
+    --padding: 8px;
 }
 
 .td-separator.td-separator--horizontal {
-    padding: 16px 0px;
+    padding: var(--padding) 0px;
     background:
         /* squares */
         linear-gradient(var(--squares-color), var(--squares-color)) left center /var(--square-size) var(--square-size) border-box,
         linear-gradient(var(--squares-color), var(--squares-color)) right center /var(--square-size) var(--square-size) border-box,
-        /*borders*/
+        /*line*/
         linear-gradient(var(--line-color), var(--line-color)) center center /100% 1px border-box;
     background-repeat: no-repeat;
 }
 
 .td-separator.td-separator--vertical {
-    padding: 0px 16px;
+    padding: 0px var(--padding);
     background:
         /* squares */
         linear-gradient(var(--squares-color), var(--squares-color)) top center /var(--square-size) var(--square-size) border-box,
         linear-gradient(var(--squares-color), var(--squares-color)) bottom center /var(--square-size) var(--square-size) border-box,
-        /*borders*/
+        /*line*/
         linear-gradient(var(--line-color), var(--line-color)) top center /1px 100% border-box;
     background-repeat: no-repeat;
 }

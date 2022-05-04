@@ -12,22 +12,20 @@
     border: 0px;
 }
 
-.td-button-keybind:hover, .td-button-keybind:active, .td-button-keybind:focus {
-    
-}
-
-.td-button-keybind:active, .td-button-keybind:focus {
-    
-}
-
 .td-button-keybind:active .td-text, .td-button-keybind:focus .td-text {
     color: black;
-}
-
-.td-button-keybind:active .td-text.td-text--shadow::after {
-    
 }
 
 .td-button-keybind:focus {
     outline: none;
 }
+
+.td-button-keybind--keybind {
+    color: var(--td-orange);
+    text-transform: capitalize;
+}
+
+.td-button-keybind--label {
+    
+}
+
