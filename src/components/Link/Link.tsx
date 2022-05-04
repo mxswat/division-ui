@@ -5,7 +5,7 @@ import { Text } from '../Text';
 export const Link = (props: ComponentPropsWithoutRef<"a"> & {
   children: string
 }) => {
-  const className = `${props.className || ''} td-link`
+  const className = `${props.className || ''} td-link`.trim();
   return (
     <a {...props} className={className}>
       <Text className='font-1'>

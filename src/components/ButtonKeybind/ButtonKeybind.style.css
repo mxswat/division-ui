@@ -1,0 +1,33 @@
+.td-button-keybind {
+    font-size: 2em;
+    color: white;
+    padding: 4px;
+    transform: none;
+    transition: background-color 0.20s, transform 0.20s;
+    transition-delay: 100ms;
+    background: transparent ;
+
+    display: flex;
+    justify-content: center;
+    border: 0px;
+}
+
+.td-button-keybind:hover, .td-button-keybind:active, .td-button-keybind:focus {
+    
+}
+
+.td-button-keybind:active, .td-button-keybind:focus {
+    
+}
+
+.td-button-keybind:active .td-text, .td-button-keybind:focus .td-text {
+    color: black;
+}
+
+.td-button-keybind:active .td-text.td-text--shadow::after {
+    
+}
+
+.td-button-keybind:focus {
+    outline: none;
+}

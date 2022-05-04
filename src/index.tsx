@@ -4,6 +4,7 @@ import './style/index.css';
 import './style/style.css';
 import './style/font/stylesheet.css';
 import MainMenu from './pages/MainMenu/MainMenu';
+import { PressToStart } from './pages/PressToStart';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MainMenu />
+    <PressToStart />
   </React.StrictMode>
 );
 

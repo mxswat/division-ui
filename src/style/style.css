@@ -11,11 +11,13 @@ body {
     font-size: 1.55vh;
     /* This is quite cool, by using the VH I can keep the text proportion just like in the game menu, 
     and using VH is better than VW so the UI does not get skewed by ultra wide monitor */
+    font-family: 'bordaregular';
 }
 
 #root {
     background-image: url('../images/noUIbg.png');
     background-image: url('../../Resources/Screenshots/Menu-Main.jpg');
+    background-image: url('../../Resources/Screenshots/Press-To-Start.png');
     /* background-image: url('../../Resources/Screenshots/Menu-Settings-BenchMark.jpg'); */
     background-size: cover;
     perspective: 1000px;
