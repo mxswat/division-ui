@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    margin-top: 80.2vh;
     font-size: 1.1em;
     height: 6.6vh;
     width: 25vw;
@@ -20,4 +19,11 @@
 
 .td-pts-buttons .td-button-keybind .td-separator {
     --square-size: 0.15em;
+}
+
+.td-pts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50vh;
 }
