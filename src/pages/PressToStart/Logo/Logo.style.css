@@ -1,9 +1,12 @@
 .pts-logo {
-    display: block;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
-.division-ui {
-    --font-size: 9.94em;
+.logo-division {
+    margin-left: 2rem;
+    --font-size: 8.94em;
     font-family: 'Montserrat', sans-serif;
     color: #ff6a1363;
     text-transform: uppercase;
@@ -11,12 +14,13 @@
     font-size: var(--font-size);
     outline: 1px solid red;
     display: grid;
-    flex-direction: column;
     --line: 2px;
-    transform: scale3d(0.9, 1, 1);
+    transform: scale3d(1,1.1,1);
+    /* Okay, so have the font match the TD2 font I had to scale it up by 10% */
+    /* This also had the useful effect of allowing the logo-ui to overflow on top of the text, just like the logo  */
 }
 
-.division-ui::after {
+.logo-division::after {
     grid-row: 1;
     grid-column: 1;
     content: attr(data-text);
@@ -24,10 +28,47 @@
     clip-path: polygon(0 calc(50% + var(--line)), 100% calc(50% + var(--line)), 100% 100%, 0% 100%);
 }
 
-.division-ui::before {
+.logo-division::before {
     content: attr(data-text);
     color: red;
     grid-row: 1;
     grid-column: 1;
     clip-path: polygon(0 0, 100% 0, 100% calc(50% - var(--line)), 0 calc(50% - var(--line)));
+}
+
+.logo-ui {
+    font-family: Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    --h: 1.45em;
+    height: var(--h);
+    width: var(--h); 
+    border: 0.12em solid transparent;
+    border-radius: 50%;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.94em;
+    margin-left: -2.7rem;
+}
+
+.logo-ui::after {
+    content: '';
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%; 
+    border: 0.12em solid green;
+    border-radius: 50%;
+    --line: 2px;
+    --h1: 26%;
+    --h2: 75%;
+    --h3: calc(50% - var(--line));
+    --h4: calc(50% + var(--line));
+    --w1: 53%;
+    clip-path: polygon(0 0, 0 var(--h1), var(--w1) var(--h1), var(--w1) var(--h3), 100% var(--h3), 100% var(--h4), var(--w1) var(--h4), var(--w1) var(--h2), 0 var(--h2), 0 100%, 100% 100%, 100% 0);
 }
