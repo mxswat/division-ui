@@ -4,6 +4,7 @@ import './style/reset.css';
 import './style/style.css';
 import './style/fonts/Ghost Clan/stylesheet.css';
 import './style/fonts/Borda/stylesheet.css';
+import './style/debug.css';
 // import MainMenu from './pages/MainMenu/MainMenu';
 import { PressToStart } from './pages/PressToStart';
 import reportWebVitals from './reportWebVitals';

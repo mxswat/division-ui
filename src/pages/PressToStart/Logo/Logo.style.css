@@ -1,9 +1,53 @@
+@property --top-line {
+    inherits: false;
+    initial-value: 0%;
+    syntax: '<percentage>';
+}
+
+@property --bottom-line {
+    inherits: false;
+    initial-value: 0%;
+    syntax: '<percentage>';
+}
+
+@keyframes bootLogo {
+    from {
+        --top-line: -50%;
+        --bottom-line: 150%;
+    }
+}
+
+@keyframes hideMassimo {
+    from {
+        max-width: 0%;
+    }
+
+    to {
+        max-width: 0%;
+    }
+}
+
+@keyframes bootMassimo {
+    from {
+        max-width: 0%;
+    }
+
+    to {
+        max-width: 100%;
+    }
+}
+
 .pts-logo {
     --td-orange-logo: #ff6a13;
     display: flex;
     align-items: center;
     align-content: center;
     --middle-cut-line: 0.2rem;
+    /* Using values over 100% and under 0 to overflow the clip path X and Y */
+    --top-line: 50%;
+    --bottom-line: 50%;
+    clip-path: polygon(-50% -50%, -50% var(--top-line), 50% var(--top-line), 50% var(--bottom-line), -50% var(--bottom-line), -50% 150%, 150% 150%, 150% var(--bottom-line), 50% var(--bottom-line), 50% var(--top-line), 150% var(--top-line), 150% -50%);
+    animation: 1250ms ease-out 0ms 1 normal none bootLogo;
 }
 
 .massimos {
@@ -12,6 +56,12 @@
     color: white;
     font-size: 2.5em;
     transform: translate3d(0px, 0.35em, 0);
+    max-width: 100%;
+    overflow: hidden;
+    animation-name: hideMassimo, bootMassimo;
+    animation-duration: 1250ms, 1500ms;
+    animation-delay: 0ms, 1250ms;
+    animation-timing-function: ease-out, ease-out;
 }
 
 .logo-division {

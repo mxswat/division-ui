@@ -1,0 +1,10 @@
+.debug-clip-path::after {
+    content: '';
+    background: rgba(255, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
