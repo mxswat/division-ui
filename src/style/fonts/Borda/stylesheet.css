@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Borda 11';
+    src: url('Borda-Regular2.woff2') format('woff2'),
+        url('Borda-Regular2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 5';
+    src: url('Borda-Regular8.woff2') format('woff2'),
+        url('Borda-Regular8.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 9';
+    src: url('Borda-Regular4.woff2') format('woff2'),
+        url('Borda-Regular4.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 10';
+    src: url('Borda-Regular3.woff2') format('woff2'),
+        url('Borda-Regular3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 3';
+    src: url('Borda-Regular10.woff2') format('woff2'),
+        url('Borda-Regular10.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda';
+    src: url('Borda-Light.woff2') format('woff2'),
+        url('Borda-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 4';
+    src: url('Borda-Regular9.woff2') format('woff2'),
+        url('Borda-Regular9.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda';
+    src: url('Borda-Regular12.woff2') format('woff2'),
+        url('Borda-Regular12.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 8';
+    src: url('Borda-Regular5.woff2') format('woff2'),
+        url('Borda-Regular5.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 6';
+    src: url('Borda-Regular7.woff2') format('woff2'),
+        url('Borda-Regular7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 7';
+    src: url('Borda-Regular6.woff2') format('woff2'),
+        url('Borda-Regular6.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Borda 2';
+    src: url('Borda-Regular11.woff2') format('woff2'),
+        url('Borda-Regular11.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

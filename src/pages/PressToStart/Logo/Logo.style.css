@@ -1,20 +1,29 @@
 .pts-logo {
+    --td-orange-logo: #ff6a13;
     display: flex;
     align-items: center;
     align-content: center;
+    --middle-cut-line: 0.2rem;
+}
+
+.massimos {
+    display: block;
+    font-family: 'Ghost Clan';
+    color: white;
+    font-size: 2.5em;
+    transform: translate3d(0px, 0.35em, 0);
 }
 
 .logo-division {
-    margin-left: 2rem;
     --font-size: 8.94em;
     font-family: 'Montserrat', sans-serif;
     color: #ff6a1363;
     text-transform: uppercase;
     font-weight: bold;
     font-size: var(--font-size);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: grid;
-    --line: 2px;
+    
     transform: scale3d(1,1.1,1);
     /* Okay, so have the font match the TD2 font I had to scale it up by 10% */
     /* This also had the useful effect of allowing the logo-ui to overflow on top of the text, just like the logo  */
@@ -24,26 +33,21 @@
     grid-row: 1;
     grid-column: 1;
     content: attr(data-text);
-    color: yellow;
-    clip-path: polygon(0 calc(50% + var(--line)), 100% calc(50% + var(--line)), 100% 100%, 0% 100%);
+    color: var(--td-orange-logo);
+    clip-path: polygon(0 calc(50% + var(--middle-cut-line)), 100% calc(50% + var(--middle-cut-line)), 100% 100%, 0% 100%);
 }
 
 .logo-division::before {
     content: attr(data-text);
-    color: red;
+    color: var(--td-orange-logo);
     grid-row: 1;
     grid-column: 1;
-    clip-path: polygon(0 0, 100% 0, 100% calc(50% - var(--line)), 0 calc(50% - var(--line)));
+    clip-path: polygon(0 0, 100% 0, 100% calc(50% - var(--middle-cut-line)), 0 calc(50% - var(--middle-cut-line)));
 }
 
 .logo-ui {
     font-family: Helvetica, sans-serif;
     font-family: 'Montserrat', sans-serif;
-    --h: 1.45em;
-    height: var(--h);
-    width: var(--h); 
-    border: 0.12em solid transparent;
-    border-radius: 50%;
     color: white;
     text-transform: uppercase;
     display: flex;
@@ -51,24 +55,23 @@
     justify-content: center;
     align-items: center;
     font-size: 8.94em;
-    margin-left: -2.7rem;
 }
 
 .logo-ui::after {
+    --h: 1.45em;
+    height: var(--h);
+    width: var(--h); 
     content: '';
     position: absolute;
     top: 50%;  
     left: 50%; 
     transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%; 
-    border: 0.12em solid green;
+    border: 0.12em solid var(--td-orange-logo);
     border-radius: 50%;
-    --line: 2px;
     --h1: 26%;
     --h2: 75%;
-    --h3: calc(50% - var(--line));
-    --h4: calc(50% + var(--line));
+    --h3: calc(50% - var(--middle-cut-line));
+    --h4: calc(50% + var(--middle-cut-line));
     --w1: 53%;
     clip-path: polygon(0 0, 0 var(--h1), var(--w1) var(--h1), var(--w1) var(--h3), 100% var(--h3), 100% var(--h4), var(--w1) var(--h4), var(--w1) var(--h2), 0 var(--h2), 0 100%, 100% 100%, 100% 0);
 }

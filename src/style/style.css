@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 html,
 body {
     width: 100%;
@@ -11,7 +13,7 @@ body {
     font-size: 1.55vh;
     /* This is quite cool, by using the VH I can keep the text proportion just like in the game menu, 
     and using VH is better than VW so the UI does not get skewed by ultra wide monitor */
-    font-family: 'bordaregular';
+    font-family: 'Borda';
 }
 
 #root {
@@ -27,6 +29,12 @@ body {
     height: 100%;
     /* padding: 16px; */
 }
+
+* {
+	/* Check if this will break performance */
+	transform-style: preserve-3d;
+}
+
 
 /* Based on https://stackoverflow.com/a/61695887/10300983 */
 .td-border {

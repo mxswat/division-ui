@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style/index.css';
+import './style/reset.css';
 import './style/style.css';
-import './style/font/stylesheet.css';
-import MainMenu from './pages/MainMenu/MainMenu';
+import './style/fonts/Ghost Clan/stylesheet.css';
+import './style/fonts/Borda/stylesheet.css';
+// import MainMenu from './pages/MainMenu/MainMenu';
 import { PressToStart } from './pages/PressToStart';
 import reportWebVitals from './reportWebVitals';
 

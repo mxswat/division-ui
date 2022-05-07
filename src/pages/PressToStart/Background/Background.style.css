@@ -1,0 +1,79 @@
+.background-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -20;
+}
+
+.loader {
+    --base-height: 100vh;
+    --height: var(--base-height);
+    --border-size: 1.5px;
+    --anim-delay: 0s;
+    /* separator */
+    --after-h-offset: 1rem;
+    --after-speed: 50s;
+    --after-color: rgba(255, 255, 255, 0.15);
+    /* separator */
+    --before-h-offset: 2rem;
+    --before-speed: 60s;
+    --before-color: rgba(255, 255, 255, 0.15);
+    /* separator */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--height);
+    height: var(--height);
+    display: grid;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto;
+    border: var(--border-size) solid;
+    border-color: transparent transparent var(--after-color) var(--after-color);
+    width: calc(var(--height) - var(--after-h-offset));
+    height: calc(var(--height) - var(--after-h-offset));
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack var(--before-speed) linear infinite;
+    animation-delay: var(--anim-delay);
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: calc(var(--height) - var(--before-h-offset));
+    height: calc(var(--height) - var(--before-h-offset));
+    border-color: var(--before-color) var(--before-color) transparent transparent;
+    animation: rotation var(--after-speed) linear infinite;
+    animation-delay: var(--anim-delay);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

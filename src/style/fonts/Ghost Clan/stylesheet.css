@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ghost Clan';
+    src: url('GhostClan.woff2') format('woff2'),
+        url('GhostClan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
