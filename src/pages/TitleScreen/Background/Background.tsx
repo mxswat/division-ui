@@ -32,6 +32,12 @@ export const Background = () => {
       '--after-speed': '70s',
       '--before-speed': '30s',
       '--anim-delay': '-60s',
+    },
+    {
+      '--height': 'calc(var(--base-height) - 8vh - 3rem)',
+      '--after-speed': '70s',
+      '--before-speed': '30s',
+      '--anim-delay': '-60s',
     }
   ]
 

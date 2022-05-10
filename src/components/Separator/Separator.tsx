@@ -1,4 +1,3 @@
-import { hostname } from 'os';
 import React from 'react';
 import './Separator.style.css';
 

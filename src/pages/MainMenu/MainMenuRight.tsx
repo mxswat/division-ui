@@ -4,7 +4,7 @@ import { Text } from '../../components/Text';
 import { Image } from '../../components/Image';
 import { Link } from '../../components/Link';
 
-const YoE = `0${new Date().getFullYear() - 2016}`;
+const YoE = `0${new Date().getFullYear() - 2017}`;
 
 const MainMenuRight = () => {
     return (

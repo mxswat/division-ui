@@ -6,6 +6,10 @@
   padding: 8vh;
 }
 
+.td-MainMenu--background {
+  background-image: url('../../images/noUIbg.png');
+}
+
 .left-side, .right-side {
   display: flex;
   flex-direction: column;

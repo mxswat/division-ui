@@ -1,0 +1,9 @@
+.perspective-container {
+    perspective: 1000px;
+    transform-style: flat;
+    overflow: hidden;
+}
+
+.perspective-container--overlflower {
+    overflow: auto;
+}

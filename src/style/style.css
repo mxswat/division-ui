@@ -17,24 +17,17 @@ body {
 }
 
 #root {
-    background-image: url('../images/noUIbg.png');
-    background-image: url('../../Resources/Screenshots/Menu-Main.jpg');
-    background-image: url('../../Resources/Screenshots/Press-To-Start.png');
-    /* background-image: url('../../Resources/Screenshots/Menu-Settings-BenchMark.jpg'); */
     background-size: cover;
-    perspective: 1000px;
     overflow: auto;
-    transform-style: preserve-3d;
     width: 100%;
     height: 100%;
-    /* padding: 16px; */
+    transform-style: flat;
 }
 
 * {
 	/* Check if this will break performance */
 	transform-style: preserve-3d;
 }
-
 
 /* Based on https://stackoverflow.com/a/61695887/10300983 */
 .td-border {

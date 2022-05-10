@@ -5,16 +5,26 @@ import './style/style.css';
 import './style/fonts/Ghost Clan/stylesheet.css';
 import './style/fonts/Borda/stylesheet.css';
 import './style/debug.css';
-// import MainMenu from './pages/MainMenu/MainMenu';
-import { PressToStart } from './pages/PressToStart';
+import MainMenu from './pages/MainMenu/MainMenu';
+import { TitleScreen } from './pages/TitleScreen';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <PressToStart />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TitleScreen />} />
+        <Route path="menu" element={<MainMenu />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

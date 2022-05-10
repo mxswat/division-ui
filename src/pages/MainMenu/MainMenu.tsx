@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button } from '../../components/Button';
-import { Separator } from '../../components/Separator';
+import { PerspectiveContainer } from '../../components/Perspectivecontainer';
 import { Text } from '../../components/Text';
 import './MainMenu.css';
 import MainMenuRight from './MainMenuRight';
 
 const MainMenu = () => {
   return (
-    <div className="td-MainMenu">
+    <PerspectiveContainer className="td-MainMenu--background" classNameScroller="td-MainMenu">
       <div className="left-side">
         <Button>
           <Text>Hello</Text>
@@ -29,7 +29,7 @@ const MainMenu = () => {
         </Button>
       </div>
       <MainMenuRight />
-    </div>
+    </PerspectiveContainer>
   );
 }
 
