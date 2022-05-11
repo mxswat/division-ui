@@ -2,7 +2,7 @@ import React from 'react';
 import './PerspectiveContainer.style.css';
 
 /**
- * This container is mandatory to keep the perspective relative to the view port
+ * This container is mandatory to keep the perspective relative to the view port when scrolling
  * @param props 
  * @returns 
  */
