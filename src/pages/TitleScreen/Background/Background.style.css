@@ -82,21 +82,21 @@
 
 @keyframes rotationDot {
     0% {
-        transform: rotate(calc(var(--offset-rotation) * 2 + 0deg));
+        transform: rotate(calc((var(--dot-order)) * 2deg));
     }
 
     100% {
-        transform: rotate(calc(var(--offset-rotation) * 2 + 360deg));
+        transform: rotate(calc((var(--dot-order)) * 2deg + 360deg));
     }
 }
 
 .dotted-circle {
-    --offset-rotation: 0deg;
+    --dot-order: 0deg;
     --dot-size: 2px;
     height: 123vh;
     width: var(--dot-size);
     position: absolute;
-    transform: rotate(calc(var(--offset-rotation) * 2));
+    /* transform: rotate(calc((var(--dot-order)) * 2deg)); */
     transform-origin: center;
     animation: rotationDot 1500s linear infinite;
     opacity: 0.7;
@@ -137,5 +137,5 @@
 }
 
 .dot:last-child {
-    margin: 20px;
+    margin: 20px 0px;
 }

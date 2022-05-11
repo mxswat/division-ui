@@ -49,7 +49,7 @@ export const Background = () => {
     (_, i) => (
       <span className={`dotted-circle dotted-circle--${i + 1}`} key={i} style={
         {
-          '--offset-rotation': `${i}deg`
+          '--dot-order': `${i}`,
         } as React.CSSProperties}
       >
         <span className='dot'/>
