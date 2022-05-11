@@ -52,15 +52,15 @@ export const Background = () => {
           '--dot-order': `${i}`,
         } as React.CSSProperties}
       >
-        <span className='dot'/>
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
-        <span className='dot'/> 
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
+        <span className='dot' />
       </span>
     )
   )
@@ -69,7 +69,16 @@ export const Background = () => {
     <div className='background-container'>
       <span className="loader" />
       {loaderComps}
-      {dottedCircle}
+      <div className="outer-circles-w-dots">
+        <div className='outer-circle-flat outer-circle-flat--exterior-1' />
+        <div className='outer-circle-flat outer-circle-flat--exterior-2' />
+        <div className='outer-circle-flat outer-circle-flat--interior-1' />
+        <div className='outer-circle-flat outer-circle-flat--interior-2' />
+        <div className='outer-circle-flat outer-circle-flat--interior-3' />
+        <div className='outer-circle-flat outer-circle-flat--interior-4' />
+        <div className='outer-circle-flat outer-circle-flat--interior-5' />
+        {dottedCircle}
+      </div>
     </div>
   );
 }

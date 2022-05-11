@@ -15,7 +15,7 @@
 }
 
 .loader {
-    --base-height: 100vh;
+    --base-height: 80vh;
     --height: var(--base-height);
     --border-size: 1.5px;
     --anim-delay: 0s;
@@ -80,25 +80,86 @@
     }
 }
 
-@keyframes rotationDot {
+@keyframes rotationDots {
     0% {
-        transform: rotate(calc((var(--dot-order)) * 2deg));
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(calc((var(--dot-order)) * 2deg + 360deg));
+        transform: rotate(360deg);
     }
 }
 
+@keyframes bootDots {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.outer-circles-w-dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bootDots 1s linear 0s 1, rotationDots 1000s linear 1.1s infinite;
+}
+
+.outer-circle-flat {
+    --size: 99vh;
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.outer-circle-flat--interior-1 {
+    --size: 98vh;
+}
+
+.outer-circle-flat--interior-2 {
+    --size: 95vh;
+}
+
+.outer-circle-flat--interior-3 {
+    --size: 94vh;
+}
+
+.outer-circle-flat--interior-4 {
+    --size: 85vh;
+    border: none;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100%' ry='100%' stroke='rgba(255, 255, 255, 0.10)' stroke-width='6' stroke-dasharray='2%2c 100' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.outer-circle-flat--interior-5 {
+    --size: 70vh;
+    border: none;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100%' ry='100%' stroke='rgba(255, 255, 255, 0.10)' stroke-width='3' stroke-dasharray='2%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.outer-circle-flat--exterior-1 {
+    --size: 129vh;
+}
+
+.outer-circle-flat--exterior-2 {
+    --size: 130vh;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .dotted-circle {
-    --dot-order: 0deg;
+    --dot-order: 0;
     --dot-size: 2px;
     height: 123vh;
     width: var(--dot-size);
     position: absolute;
-    /* transform: rotate(calc((var(--dot-order)) * 2deg)); */
+    transform: rotate(calc((var(--dot-order)) * 2deg + 360deg));
     transform-origin: center;
-    animation: rotationDot 1500s linear infinite;
     opacity: 0.7;
 }
 
