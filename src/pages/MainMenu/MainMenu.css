@@ -8,6 +8,9 @@
 
 .td-MainMenu--background {
   background-image: url('../../images/noUIbg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .left-side, .right-side {

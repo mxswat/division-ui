@@ -45,10 +45,31 @@ export const Background = () => {
     (style, i) => (<span className={`loader loader--${i + 1}`} key={i} style={style as React.CSSProperties} />)
   )
 
+  const dottedCircle = new Array(180).fill('').map(
+    (_, i) => (
+      <span className={`dotted-circle dotted-circle--${i + 1}`} key={i} style={
+        {
+          '--offset-rotation': `${i}deg`
+        } as React.CSSProperties}
+      >
+        <span className='dot'/>
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+        <span className='dot'/> 
+      </span>
+    )
+  )
+
   return (
     <div className='background-container'>
       <span className="loader" />
       {loaderComps}
+      {dottedCircle}
     </div>
   );
 }

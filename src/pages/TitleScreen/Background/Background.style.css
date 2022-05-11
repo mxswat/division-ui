@@ -7,6 +7,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -20;
+
+    /* Align all childs to center without using aboslute and transform 50 50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loader {
@@ -24,9 +29,6 @@
     --before-color: rgba(255, 255, 255, 0.15);
     /* separator */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: var(--height);
     height: var(--height);
     display: grid;
@@ -76,4 +78,64 @@
     100% {
         transform: rotate(-360deg);
     }
+}
+
+@keyframes rotationDot {
+    0% {
+        transform: rotate(calc(var(--offset-rotation) * 2 + 0deg));
+    }
+
+    100% {
+        transform: rotate(calc(var(--offset-rotation) * 2 + 360deg));
+    }
+}
+
+.dotted-circle {
+    --offset-rotation: 0deg;
+    --dot-size: 2px;
+    height: 123vh;
+    width: var(--dot-size);
+    position: absolute;
+    transform: rotate(calc(var(--offset-rotation) * 2));
+    transform-origin: center;
+    animation: rotationDot 1500s linear infinite;
+    opacity: 0.7;
+}
+
+.dot {
+    height: var(--dot-size);
+    width: var(--dot-size);
+    border-radius: 50%;
+    background: white;
+    display: block;
+    margin: 8px 0px;
+    opacity: 0.4;
+}
+
+.dot:nth-child(1) {
+    opacity: 0.1;
+}
+
+.dot:nth-child(2) {
+    opacity: 0.15;
+}
+
+.dot:nth-child(3) {
+    opacity: 0.2;
+}
+
+.dot:nth-child(4) {
+    opacity: 0.25;
+}
+
+.dot:nth-child(5) {
+    opacity: 0.3;
+}
+
+.dot:nth-child(6) {
+    opacity: 0.35;
+}
+
+.dot:last-child {
+    margin: 20px;
 }

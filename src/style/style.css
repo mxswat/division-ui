@@ -17,6 +17,9 @@ body {
 }
 
 #root {
+    background-image: url('../images/noUIbg.png');
+    background-image: url('../../Resources/Screenshots/Menu-Main.jpg');
+    background-image: url('../../Resources/Screenshots/Press-To-Start.png');
     background-size: cover;
     overflow: auto;
     width: 100%;

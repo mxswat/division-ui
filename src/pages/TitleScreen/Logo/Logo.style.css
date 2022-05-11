@@ -37,6 +37,10 @@
     }
 }
 
+.pts-logo-outer {
+    margin-top: 16vh;
+}
+
 .pts-logo {
     --td-orange-logo: #ff6a13;
     display: flex;
